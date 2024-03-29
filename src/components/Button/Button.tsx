@@ -1,6 +1,5 @@
 import { FC, ReactElement } from "react";
 import { ButtonIcon, IconType } from "./ButtonIcon";
-import "./button.scss";
 
 type ButtonTypeI = "button" | "submit" | "reset";
 
