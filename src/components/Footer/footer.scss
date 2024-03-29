@@ -1,0 +1,32 @@
+@import "../../scss/variables.scss";
+@import "../../scss/mixins.scss";
+
+.footer {
+  &__inner {
+    @include flex-column(3rem);
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    border-top: 1px $borderColor solid;
+  }
+
+  &__top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__top-left-row {
+    @include flex-row(3.5rem);
+    padding: 0.5rem;
+  }
+
+  &__bottom {
+    @include flex-column(2.5rem);
+    padding-bottom: 3rem;
+  }
+
+  &__disclaimer {
+    @include text-secondary;
+    text-align: center;
+  }
+}

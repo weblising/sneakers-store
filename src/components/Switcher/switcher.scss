@@ -1,0 +1,45 @@
+@import "../../scss/variables.scss";
+
+$barSize: 1.25rem;
+$padding: 2px;
+
+.switcher {
+  cursor: pointer;
+
+  &__inner {
+    width: 2.5rem;
+    height: calc($barSize + $padding * 2);
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    background-color: $grey;
+    transition: background-color 0.15s ease-in;
+    transition-delay: 0.2s;
+
+    &_active {
+      background-color: $blue;
+    }
+  }
+
+  &__bar {
+    width: $barSize;
+    height: $barSize;
+    background-color: #fff;
+    border-radius: 50%;
+    position: relative;
+    transition: left 0.15s ease-in;
+    transition-delay: 0.15s;
+
+    &_pos {
+      &_left {
+        left: $padding;
+      }
+
+      &_right {
+        left: calc(100% - $padding - $barSize);
+      }
+    }
+  }
+}

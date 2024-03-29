@@ -1,0 +1,124 @@
+$fullImgWidth: 400px;
+@import "../../scss/mixins.scss";
+@import "../../scss/variables.scss";
+
+.product-full {
+  @include flex-column(2rem);
+
+  &__row {
+    @include flex-row(3rem);
+  }
+
+  &__img-col {
+    @include flex-column(1.5rem);
+  }
+
+  &__img-wrap {
+    border-radius: 1.5rem;
+    line-height: 0;
+    overflow: hidden;
+  }
+
+  &__img-carousel {
+    @include flex-row(1rem);
+    width: $fullImgWidth;
+  }
+
+  &__img-carousel-inner {
+    display: flex;
+    overflow: hidden;
+  }
+
+  &__img-carousel-items {
+    @include flex-row(0.75rem);
+  }
+
+  &__img-carousel-item {
+    border-radius: 1rem;
+    overflow: hidden;
+    line-height: 0;
+  }
+
+  &__content-col {
+    @include flex-column(3rem);
+    padding-top: 1.5rem;
+  }
+
+  &__main-col {
+    display: flex;
+    flex-direction: column;
+    width: 33.33333%;
+  }
+
+  &__img-wrap {
+    width: $fullImgWidth;
+  }
+
+  &__content-row {
+    @include flex-row(3rem);
+   
+  }
+
+  &__price-block {
+    @include flex-column(1.5rem);
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px $borderColor solid;
+  }
+
+  &__price-block-top {
+    @include flex-column(1.5rem);
+  }
+
+  &__price-block-row {
+    @include flex-row(1rem);
+  }
+
+  &__price {
+    font-size: 2rem;
+    line-height: 1.375rem;
+    font-weight: 700;
+  }
+
+  &__packing-count {
+    @include h6;
+    color: $grey;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    background-color: $lightGreyAlt;
+  }
+
+  &__packing-text {
+    font-weight: 500;
+    padding: 0.25rem 0;
+    cursor: pointer;
+  }
+
+  &__delivery-block {
+    margin-bottom: 2rem;
+  }
+
+  &__cart-block {
+    @include flex-row(1rem);
+  }
+
+  &__subtitle {
+    @include h3;  
+    margin-bottom: 1rem;
+
+  }
+
+  &__subtitle-sm {
+    font-size: 1.25rem;
+    line-height: 1.25rem;
+    margin-bottom: 2rem;
+   
+    font-weight: 500;
+  }
+
+  &__description {
+    > p {
+      @include paragraph;
+    }
+  }
+}

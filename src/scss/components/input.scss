@@ -1,0 +1,43 @@
+@import "../variables.scss";
+@import "../mixins.scss";
+
+.input {
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.75rem 0.5rem 1rem;
+  outline: 1px $lightGrey solid;
+  border: none;
+  width: 100%;
+  font-family: $gothamPro;
+  line-height: 2rem;
+  font-weight: 500;
+  @include transition();
+
+  &_pos {
+    &_count-selector {
+      padding-left: calc(24px + 1.5rem);
+      padding-right: calc(24px + 1.5rem);
+      text-align: center;
+      font-size: 1rem;
+      line-height: 1.5rem;
+    }
+  }
+
+  &::placeholder {
+    color: $grey;
+    font-weight: 400;
+    @include transition();
+  }
+
+  &:hover {
+    outline: 1px $grey solid;
+
+    &::placeholder {
+      color: $textColor;
+    }
+  }
+
+  &:focus {
+    outline: 2px $blue solid;
+    box-shadow: 0px 0px 6px 0px $lightGreyBlue;
+  }
+}

@@ -1,0 +1,16 @@
+@import "../../../scss/variables.scss";
+@import "../../../scss/mixins.scss";
+
+.copyrights {
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  &__text {
+    @include h6;
+    color: $greyCopyrights;
+  }
+}

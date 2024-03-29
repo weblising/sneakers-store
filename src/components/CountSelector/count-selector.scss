@@ -1,0 +1,56 @@
+@import "../../scss/variables.scss";
+@import "../../scss/mixins.scss";
+
+.count-selector {
+  position: relative;
+  height: 100%;
+  display: flex;
+
+  &:hover {
+    .count-selector {
+      &__inner {
+        border: 2px $blue solid;
+      }
+    }
+  }
+
+  &__inner {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 0.75rem;
+    border: 1px $lightGrey solid;
+    border-radius: 0.5rem;
+    @include transition(border);
+  }
+
+  &__main {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 500;
+    flex-grow: 1;
+    padding-left: calc(24px + 0.5rem);
+    padding-right: calc(24px + 0.5rem);
+    text-align: center;
+  }
+
+  &__btn {
+    position: absolute;
+    top: calc(50% - 12px);
+
+    &_pos {
+      &_left {
+        left: 0.75rem;
+      }
+      &_right {
+        right: 0.75rem;
+      }
+    }
+  }
+
+  &__input {
+    padding-left: calc(24px + 1.5rem);
+    padding-right: calc(24px + 1.5rem);
+  }
+}

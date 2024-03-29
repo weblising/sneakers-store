@@ -1,0 +1,21 @@
+.main-search {
+  position: relative;
+
+  &__btn-block {
+    position: absolute;
+    top: calc(50% - 12px);
+    right: 0.75rem;
+
+    display: flex;
+    gap: 0.75rem;
+  }
+
+  &__btn-col {
+    display: flex;
+    align-items: center;
+  }
+
+  &__input {
+    padding-right: calc(48px + 2.25rem);
+  }
+}

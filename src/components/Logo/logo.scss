@@ -1,0 +1,9 @@
+@import "../../scss/mixins.scss";
+
+.logo {
+  display: block;
+  @include transition(opacity);
+  &:hover {
+    opacity: 0.8;
+  }
+}

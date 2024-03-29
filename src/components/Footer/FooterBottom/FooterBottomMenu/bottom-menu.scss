@@ -1,0 +1,26 @@
+@import "../../../../scss/variables.scss";
+@import "../../../../scss/mixins.scss";
+
+.bottom-menu {
+  gap: 1.75rem;
+  justify-content: center;
+
+  &__link {
+    @include text-secondary;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    &_type {
+      &_active {
+        color: $blue;
+        @include transition(background-color);
+
+        &:hover {
+          background-color: transparent;
+        }
+      }
+    }
+  }
+}

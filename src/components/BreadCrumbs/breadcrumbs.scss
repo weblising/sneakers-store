@@ -1,0 +1,13 @@
+@import "../../scss/mixins.scss";
+
+.breadcrumbs {
+  &__separator {
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+    @include text-secondary;
+  }
+
+  &__link {
+    @include text-secondary;
+  }
+}

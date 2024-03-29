@@ -1,0 +1,12 @@
+@import "../variables.scss";
+
+.text {
+  &-attention {
+    color: $attentionColor;
+    font-weight: 500;
+  }
+
+  &-md{
+    font-size: 1rem;
+  }
+}

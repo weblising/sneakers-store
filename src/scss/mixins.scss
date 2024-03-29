@@ -1,0 +1,46 @@
+@import "./variables.scss";
+
+@mixin transition($property: all, $duration: 0.3s, $function: ease-in) {
+  transition: {
+    property: $property;
+    duration: $duration;
+    timing-function: $function;
+  }
+}
+
+@mixin h3 {
+  font: {
+    weight: 500;
+    size: 1.5rem;
+  }
+  line-height: 1.5rem;
+}
+
+@mixin h6 {
+  font: {
+    weight: 700;
+  }
+  // padding-bottom: 0.25rem;
+}
+
+@mixin text-secondary {
+  color: $grey;
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+@mixin paragraph {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+@mixin flex-row($gap) {
+  display: flex;
+  gap: $gap;
+}
+
+@mixin flex-column($gap) {
+  display: flex;
+  flex-direction: column;
+  gap: $gap;
+}

@@ -1,0 +1,17 @@
+@import "../../scss/variables.scss";
+@import "../../scss/mixins.scss";
+
+.header {
+  &__row {
+    @include flex-row(1.5rem);
+
+    > [class^="col"]:not(.header__separator) {
+      margin-top: auto;
+      margin-bottom: auto;
+    }
+  }
+
+  &__inner {  
+    border-bottom: 1px $borderColor solid;
+  }
+}
