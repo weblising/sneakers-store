@@ -1,7 +1,7 @@
 This project is a test task for a vacancy [https://hh.ru/vacancy/94521267](https://hh.ru/vacancy/94521267).
 
-Link to author's resume - [https://rabota.by/resume/8698ffa4ff0b1c38fd0039ed1f4b6476487767](https://rabota.by/resume/
-8698ffa4ff0b1c38fd0039ed1f4b6476487767).
+Link to author's resume - [https://rabota.by/resume/8698ffa4ff0b1c38fd0039ed1f4b6476487767](https://rabota.by/resume/8698ffa4ff0b1c38fd0039ed1f4b6476487767).
+
 The page was developed using the [Next JS framework](https://nextjs.org/) version 14.1.4 and TypeScript.
 
 The page is designed for a base resolution of 1600px.
